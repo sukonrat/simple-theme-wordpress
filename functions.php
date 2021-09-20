@@ -3,6 +3,11 @@
 function simple_theme_setup() {
     //Featured image support
     add_theme_support('post-thumbnails');
+
+    //Menu
+    register_nav_menus(array(
+    'primary' => __('primary menu')
+));
 }
 
 add_action('after_setup_theme', 'simple_theme_setup');
@@ -14,4 +19,7 @@ function set_excerpt_length(){
 }
 
 add_filter('excerpt_length', 'set_excerpt_length');
+
+
+
 ?>
