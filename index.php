@@ -1,8 +1,8 @@
 
  <?php get_header(); ?>
-
+<div class="container">
  <div class="main">
-    <div class="container">
+
          <!-- Display post list -->
     <?php if(have_posts()) : ?>
          <!-- Looping the post list -->
@@ -14,7 +14,11 @@
             </a>
             </h3>
             <div class="meta">
-                Created by <?php the_author(); ?> on <?php the_date(); ?>
+                Created by
+                <a href="<?php get_author_posts_url(get_the_author_meta('ID')); ?>">
+                <?php the_author(); ?> 
+                 </a>
+                 on <?php the_time(); ?>
             </div>
             <?php if(has_post_thumbnail()) : ?>
                 <div class="post-thumbnail">
@@ -34,6 +38,7 @@
             <?php echo wpautop("Sorry, no posts were found"); ?>
         <?php endif; ?>
     </div>
-  </div>
 
+
+ 
  <?php get_footer(); ?>

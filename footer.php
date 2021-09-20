@@ -1,3 +1,12 @@
+<div class="sidebar">
+      <?php if(is_active_sidebar('sidebar')) : ?>
+        <?php dynamic_sidebar('sidebar'); ?>
+        <?php endif; ?>
+  </div>
+
+  <div class="clear"></div>
+  </div>
+
 <footer>
       <div class="container">
       <p>&copy; <?php the_date('Y'); ?> - <?php bloginfo('name'); ?></p>

@@ -37,11 +37,25 @@ footer {
     text_align: center;
 }
 
+.clear {
+    clear: both;
+}
+
 .container {
     width: 1020px;
     margin: 0 auto;
 }
 
+.main {
+    margin: 15px 0;
+    float: left;
+    width: 68%;
+}
+
+.sidebar{
+    float: right;
+    width: 28%;
+}
 a{
     color: #333;
 }
@@ -64,6 +78,10 @@ article.post a.button {
     background-color: #333;
     color: #fff;
     padding: 10px 5px;
+}
+
+.meta a {
+    color: #fff;
 }
 
 .post-thumbnail img {
@@ -93,4 +111,30 @@ article.post a.button {
 .main-nav a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Widget */
+
+.side-widget{
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #333;
+}
+.side-widget ul{
+    margin: 0;
+    padding: 0;
+}
+.side-widget li{
+  padding: 10px 0;
+    list-style: none;
+    border-bottom: 1px#333 dotted;
+}
+
+.side-widget a {
+ text-decoration: none;
+}
+
+/*Comments */
+.comment-body {
+    background-color: antiquewhite;
 }

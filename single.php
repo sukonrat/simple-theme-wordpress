@@ -1,10 +1,10 @@
 
  <?php get_header(); ?>
-
+ <div class="container">
 <div class="main">
 
 <!-- Display post -->
-   <div class="container">
+ 
    <?php if(have_posts()) : ?>
    <?php while(have_posts()) : the_post(); ?>
          <article class="post">
@@ -29,7 +29,8 @@
        <?php else: ?>
            <?php echo wpautop("Sorry, no posts were found"); ?>
        <?php endif; ?>
+    <!-- Display comment -->
+       <?php comments_template(); ?>
    </div>
- </div>
 
 <?php get_footer(); ?>

@@ -11,7 +11,9 @@
 <body>
   <header>
      <div class="container"> 
+       <a href="<?php echo esc_url( home_url('/')) ?>">
          <h1><?php bloginfo('name'); ?></h1>
+         </a>
       <span><?php bloginfo('description'); ?></span>
     </div>
   </header>
